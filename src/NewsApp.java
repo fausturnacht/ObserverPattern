@@ -2,9 +2,9 @@ public class NewsApp {
     public static void main(String[] args) {
         NewsAgency newsAgency = new NewsAgency();
 
-        Subscriber salem = new Subscriber("Salem");
-        Subscriber berkeley = new Subscriber("Berkeley");
-        Subscriber charlie = new Subscriber("Charlie");
+        Subscriber salem = new MailUser("Salem");
+        Subscriber berkeley = new MailUser("Berkeley");
+        Subscriber charlie = new MailUser("Charlie");
 
         newsAgency.subscribe(salem);
         newsAgency.subscribe(berkeley);
