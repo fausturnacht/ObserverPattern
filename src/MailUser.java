@@ -5,7 +5,7 @@ public class MailUser implements Subscriber {
         this.username = username;
     }
 
-    public void update(String news){
-        System.out.println("Notifying " + username + " of the news: "+ news);
+    public void update(String news, String newsType){
+        System.out.println("Notifying " + username + " of the news from " + newsType + ": "+ news);
     }
 }

@@ -3,6 +3,7 @@ import java.util.List;
 
 public class NewsGeneral implements NewsAgency {
     private final List<Subscriber> subscriberList;
+    private final String newsType = "General";
 
     public NewsGeneral(){
         subscriberList = new ArrayList<>();
@@ -18,7 +19,7 @@ public class NewsGeneral implements NewsAgency {
 
     public void publishNews(String news){
         for(Subscriber subscriber : subscriberList){
-            subscriber.update(news);
+            subscriber.update(news, newsType);
         }
     }
 }
